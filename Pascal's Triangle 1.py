@@ -6,7 +6,7 @@ def pascal(n):
 
     row = [1]
     if n > 0:
-        for _ in range(n + 1):
+        for _ in range(n):
             row = [sum(pair) for pair in zip([0] + row, row +[0])]
     return row
 
