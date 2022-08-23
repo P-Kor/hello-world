@@ -6,7 +6,14 @@ for row in lst:
     print(*row)
 print()
 
-lst = [list(t)[::-1] for t in zip(*lst)]
+lst_cr = [list(t)[::-1] for t in zip(*lst)]
 
-for row in lst:
+for row in lst_cr:
     print(*row)
+print()
+
+lst_ccr = [list(t) for t in zip(*lst)][::-1]
+
+for row in lst_ccr:
+    print(*row)
+print()
